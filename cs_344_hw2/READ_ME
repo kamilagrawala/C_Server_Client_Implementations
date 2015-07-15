@@ -1,0 +1,54 @@
+/* Author: Kamil Agrawala                                                                                                                                    
+ * Email: agrawalk@onid.orst.edu                                                                                                                             
+ * Class: Cs344-001                                                                                                                                          
+ * Assingment #2                                                                                                                                             
+ * Programming Projects README file                                                                                                                       
+ */
+
+All options work.
+
+The E and e options work as standalone. Or with the -o option as follows
+
+./myoscar -eo <Archive> <optional files>
+./myoscar -Eo <Archive> <optional files>
+
+Attached here is a copy paste of the results of the test oscar bash script. 
+
+Running with student oscar program "./myoscar"
+Running with student Python file "problem3.py"
+
+** Makefile points (section 1.6) : 40 of 40 **
+** Points for no compiler warnings (section 1.6.2): 20 of 20 **
+** Points for -a   60 of 60 **
+** Points for -h   10 of 10 **
+** Points for -V   10 of 10 **
+** Points for -v   10 of 10 **
+** Points for -d   60 of 60 **
+** Points for -e   60 of 60 **
+** Points for -E   40 of 40 **
+** Points for -eo -oe -Eo -oE   40 of 40 **
+** Points for -t   50 of 50 **
+** Points for -T   80 of 80 **
+Checking for Extra Credit
+  received 100 percent of base oscar points
+
+** Points for -A 0 of 20 ** EXTRA CREDIT **
+** Points for -m, -u, and -C 0 of 60 ** EXTRA CREDIT **
+** Points for -S 0 of 40 ** EXTRA CREDIT **
+
+**** oscar total points 480 (without Extra Credit)
+**** oscar avail points 480 (without Extra Credit)
+**** Total oscar points 480 (includes Extra Credit)
+
+Testing Python Popen
+**** Points for Python Popen 30 of 30 **
+
+*******************************************************
+**** TOTAL Homework2 points 510 (includes any Extra Credit)
+**** Deductions for late assignments will be done separately
+**** Deductions for omitting file header info is done separately
+**** Points for the oscar plan show up in a seperate column in Blackboard
+
+Graded by Kamil Agrawala    (agrawalk)
+    Tue Feb 24 12:39:20 PST 2015 flip3.engr.oregonstate.edu
+    grading script test-oscar.bash  $Revision: 1.25 $
