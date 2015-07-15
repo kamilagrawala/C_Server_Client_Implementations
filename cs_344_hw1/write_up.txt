@@ -1,0 +1,51 @@
+# Author: Kamil Agrawala
+# Email: agrawalk@onid.orst.edu
+# Class: Cs344-001
+# Write up Questions
+# Write-up question 2-5 file
+
+Q2: RCS is a software implementation of revision control which automates storing, logging, testing and collabartion between software engineers. 
+Some examples of revision control systems include,
+CVS, Git, SVN, Mercurial. Some commands that are common include push,fetch, pull and merge.
+RCS is immensely important as it helps engineers collabarate and backup their data. 
+
+Q3: A pipe is used to pass output of a program to another program or utility. On the other hand a redirect is used to pass the output to a file or stream.
+To explain how STDIN can be used for each I'll use the example of the rm_ws assingment. 
+
+In the first example we could use ./rm_ws –b –i –e < latin1.txt, this is a example of redirection in which the executable is getting the data from latin1.txt as if
+the user typed the data in, i.e. data is being redirected into the executable to read as STDIN.
+
+The second example is cat latin1.txt | ./rm_ws –b –i –e. In this case the cat command takes the contents of latin1.txt and puts it into STDOUT then those contents are passed to 
+./rm_ws as its STDIN.
+
+Q4: according to the make man page, make is a GNU utility which is used to maintain groups of programns. In this class a make file can be immensely useful. I can define targets for testing 
+and certain flags such as CFLAGS which will force the appropriate warnings and errors to occur. All this combined will make debugging my assingments easier. 
+
+To describe dependices take the following example into consideration:
+
+hello: main.o factorial.o hello.o
+       $(CC) main.o factorial.o hello.o -o hello
+
+In this case the target hello is dependent on main.o. factorial.o and hello.o. Is changes are made to any of these dependices the compiler will know recompilation of these files are needed. However not all object files need to
+be recreated therefore saving valuable compilation time.
+
+Q5: HardLink: is not a pointer to a file it is a directory entry pointing to the same inode. Some important things to notice are if you change the name of the file the hardlink is associated with it(hardlink) will still
+point to that file. If you replace the other file with a new version (by copying it), a hardlink will not point to the new file. Having the same filesystem is needed for hardlinks.
+
+Symlink: is a pointer to another file. It is similar to shortcuts on windows. Unlike a hard link symlinks don't hold any data about the target file but just points to another entry on the filesystem.This difference gives
+symbolic links certain qualities that hard links do not have, such as the ability to link to directories, or to files on remote computers networked through NFS. Also, when you delete a target file, symbolic links to that
+file become unusable, whereas hard links preserve the contents of the file.
+
+On UNIX:
+
+to create a hardlink
+
+ln {source} {link}
+
+Where,
+source is an existing file.
+link is the file to create (a hard link).
+
+ro create symlink
+
+ln -s {/path/to/file-name} {link-name}
